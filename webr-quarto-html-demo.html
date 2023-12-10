@@ -3120,7 +3120,7 @@ body {
 	var color = document.getElementsByClassName('card first')[0].style['background-color']
     document.getElementsByClassName('card first')[0].style['background-color']= 'green';
     if (document.getElementsByClassName('card ninth')[0].style['background-color'] === 'green' && document.getElementsByClassName('card first')[0].style['background-color'] === 'green' && document.getElementsByClassName('card fifth')[0].style['background-color'] === 'green'){
-    alert('Congratulations, you solved it! This is the clue we found:\n\n' + toUnicodeVariant('Every x and y coordinate should be changed by decrementing their values by 20, times the ordinal number next to them. So every value of x1/y1, should be decremented by 20, every value of x2/y2 by 40, and so on.', 'bold sans', 'bold'));
+    alert('Congratulations, you solved it! This is the clue we found:\n\n' + toUnicodeVariant('Every x and y coordinate should be changed by decrementing their values by 20, times the ordinal number next to them. So every value of x1/y1, should be decremented by 20, every value of x2/y2 by 40, and so on. Both xlim and ylim end range values should also be decremented by 110.', 'bold sans', 'bold'));
 }
 })();return false;">Airplane</a></div>
 		<div class="card second"><a href="#" onClick="(function(){
@@ -3139,7 +3139,7 @@ body {
     var color = document.getElementsByClassName('card first')[0].style['background-color']
     document.getElementsByClassName('card fifth')[0].style['background-color']= 'green';
     if (document.getElementsByClassName('card ninth')[0].style['background-color'] === 'green' && document.getElementsByClassName('card first')[0].style['background-color'] === 'green' && document.getElementsByClassName('card fifth')[0].style['background-color'] === 'green'){
-    alert('Congratulations, you solved it! This is the clue we found:\n\n' + toUnicodeVariant('Every x and y coordinate should be changed by decrementing their values by 20, times the ordinal number next to them. So every value of x1/y1, should be decremented by 20, every value of x2/y2 by 40, and so on.', 'bold sans', 'bold'));
+    alert('Congratulations, you solved it! This is the clue we found:\n\n' + toUnicodeVariant('Every x and y coordinate should be changed by decrementing their values by 20, times the ordinal number next to them. So every value of x1/y1, should be decremented by 20, every value of x2/y2 by 40, and so on. Both xlim and ylim end range values should also be decremented by 110.', 'bold sans', 'bold'));
 }
     return false;
 })();return false;">Flying</a></div>
@@ -3159,7 +3159,7 @@ body {
     var color = document.getElementsByClassName('card first')[0].style['background-color']
     document.getElementsByClassName('card ninth')[0].style['background-color']= 'green';
     if (document.getElementsByClassName('card ninth')[0].style['background-color'] === 'green' && document.getElementsByClassName('card first')[0].style['background-color'] === 'green' && document.getElementsByClassName('card fifth')[0].style['background-color'] === 'green'){
-    alert('Congratulations, you solved it! This is the clue we found:\n\n' + toUnicodeVariant('Every x and y coordinate should be changed by decrementing their values by 20, times the ordinal number next to them. So every value of x1/y1, should be decremented by 20, every value of x2/y2 by 40, and so on.', 'bold sans', 'bold'));
+    alert('Congratulations, you solved it! This is the clue we found:\n\n' + toUnicodeVariant('Every x and y coordinate should be changed by decrementing their values by 20, times the ordinal number next to them. So every value of x1/y1, should be decremented by 20, every value of x2/y2 by 40, and so on. Both xlim and ylim end range values should also be decremented by 110.', 'bold sans', 'bold'));
 }
     return false;
 })();return false;">Wings</a></div>
@@ -3190,7 +3190,7 @@ Loading webR…
     elt.style.height = "auto";
     editorDiv.append(elt);
   },{
-    value: `x1 = c(132.019,133.019,134.019,134.019,134.019,134.019,134.019,134.519)\nx2=c(152.019,152.019,152.019,152.019,152.219,153.519,154.519,154.519)\nx3=c(174.519,174.519,173.019,173.019,173.019,173.019,173.019,173.019)\ny1=c(48.819,48.819)\ny2=c(88.819,98.819,108.819,118.819,146.019,146.019,146.019,146.019)\ny3=c(108.819,138.819,138.819,138.819,138.819,138.819,138.819,118.819)\nplot(x1, y1, type="l", col="black", pch="o", xlab ="",  ylab="", lty=1, ylim = c(41.019, 111.019), xlim = c(111.019,116.019))\npoints(x2, y2, col="black", pch="")\nlines(x2, y2, col="black", type="l", lty=2)\npoints(x3, y3, col="black",pch="")\nlines(x3, y3, col="black", type="l", lty=3)`,
+    value: `x1 = c(132.019,133.019,134.019,134.019,134.019,134.019,134.019,134.519)\nx2=c(152.019,152.019,152.019,152.019,152.219,153.519,154.519,154.519)\nx3=c(174.519,174.519,173.019,173.019,173.019,173.019,173.019,173.019)\ny1=c(48.819,48.819)\ny2=c(88.819,98.819,108.819,118.819,146.019,146.019,146.019,146.019)\ny3=c(108.819,138.819,138.819,138.819,138.819,138.819,138.819,118.819)\nplot(x1, y1, type="l", col="black", pch="o", xlab ="",  ylab="", lty=1, ylim = c(41.019, 221.019), xlim = c(111.019,226.019))\npoints(x2, y2, col="black", pch="")\nlines(x2, y2, col="black", type="l", lty=2)\npoints(x3, y3, col="black",pch="")\nlines(x3, y3, col="black", type="l", lty=3)`,
     lineNumbers: true,
     mode: "r",
     theme: "light default",
