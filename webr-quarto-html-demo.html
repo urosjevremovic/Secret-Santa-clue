@@ -2887,7 +2887,25 @@ have is this <a href="#" onClick="(function(){
         longs = prompt('Longitude of your place of birth holds the secret! Hint: Remember, longitude needs to be a valid number');
     }
     var parentNode = document.getElementById('webr-editor-1').getElementsByClassName('CodeMirror-code')[0];
-    parentNode.childNodes[2].childNodes[1].childNodes[0].childNodes[5].childNodes[0].data='50'
+    var newNode = document.createElement('div');
+    newNode.style.position = 'relative';
+    var nodeAfter = parentNode.childNodes[2];
+    parentNode.insertBefore(newNode,nodeAfter)
+    var htmlCode = {
+        child: '<div class=\x22CodeMirror-gutter-wrapper\x22 style=\x22left: -32px;\x22 aria-hidden=\x22true\x22><div class=\x22CodeMirror-linenumber CodeMirror-gutter-elt\x22 style=\x22left: 0px; width: 23px;\x22>long</div></div><pre class=\x22 CodeMirror-line \x22 role=\x22presentation\x22><span role=\x22presentation\x22><span class=\x22cm-variable\x22>y1</span><span class=\x22cm-operator\x22>=</span><span class=\x22cm-variable\x22>c</span>(<span class=\x22cm-number\x22>48.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>48.819</span>)</span></pre>'
+    };
+
+    function insertMultipleChildren(childrenAmount) {
+        var result = '';
+
+        for (var i = 0; i < childrenAmount; i++) {
+        result += htmlCode.child;
+  }
+
+        newNode.innerHTML = result;
+}
+
+    insertMultipleChildren(1);
 
     return false;
 })();return false;">clue</a>.</p>
