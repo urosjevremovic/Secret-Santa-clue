@@ -2887,25 +2887,15 @@ have is this <a href="#" onClick="(function(){
         longs = prompt('Longitude of your place of birth holds the secret! Hint: Remember, longitude needs to be a valid number');
     }
     var parentNode = document.getElementById('webr-editor-1').getElementsByClassName('CodeMirror-code')[0];
-    var newNode = document.createElement('div');
-    newNode.style.position = 'relative';
-    var nodeAfter = parentNode.childNodes[2];
-    parentNode.insertBefore(newNode,nodeAfter)
-    var htmlCode = {
-        child: '<div class=\x22CodeMirror-gutter-wrapper\x22 style=\x22left: -32px;\x22 aria-hidden=\x22true\x22><div class=\x22CodeMirror-linenumber CodeMirror-gutter-elt\x22 style=\x22left: 0px; width: 23px;\x22>long</div></div><pre class=\x22 CodeMirror-line \x22 role=\x22presentation\x22><span role=\x22presentation\x22><span class=\x22cm-variable\x22>y1</span><span class=\x22cm-operator\x22>=</span><span class=\x22cm-variable\x22>c</span>(<span class=\x22cm-number\x22>48.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>43.819</span>,<span class=\x22cm-number\x22>48.819</span>)</span></pre>'
-    };
+    parentNode.childNodes[2].childNodes[1].childNodes[0].childNodes[5].childNodes[0].data='48.819'
+    parentNode.childNodes[2].childNodes[1].childNodes[0].childNodes[7].childNodes[0].data='43.819'
+    parentNode.childNodes[2].childNodes[1].childNodes[0].childNodes[9].childNodes[0].data='43.819'
+    parentNode.childNodes[2].childNodes[1].childNodes[0].childNodes[11].childNodes[0].data='43.819'
+    parentNode.childNodes[2].childNodes[1].childNodes[0].childNodes[13].childNodes[0].data='43.819'
+    parentNode.childNodes[2].childNodes[1].childNodes[0].childNodes[15].childNodes[0].data='43.819'
+    parentNode.childNodes[2].childNodes[1].childNodes[0].childNodes[17].childNodes[0].data='43.819'
+    parentNode.childNodes[2].childNodes[1].childNodes[0].childNodes[19].childNodes[0].data='48.819'
 
-    function insertMultipleChildren(childrenAmount) {
-        var result = '';
-
-        for (var i = 0; i < childrenAmount; i++) {
-        result += htmlCode.child;
-  }
-
-        newNode.innerHTML = result;
-}
-
-    insertMultipleChildren(1);
 
     return false;
 })();return false;">clue</a>.</p>
@@ -3097,7 +3087,7 @@ Loading webR…
     elt.style.height = "auto";
     editorDiv.append(elt);
   },{
-    value: `x1 = rep(1:8)\nx2=c(2,2,3,4,5,6,6.4,6.4)\ny1=c(-48.2,-30.3,-12,-2,-17,-26,-36,-47.2)\ny2=c(-30,-30,-30,-30,-30,-30,-30,-30)\ny3=c(-40,-40,-40,-40,-40,-40,-40,-40)\nplot(x1, y1, type="l", col="black", pch="o", xlab ="",  ylab="", lty=1, ylim = c(-50, 0))\npoints(x2, y2, col="black", pch="")\nlines(x2, y2, col="black", type="l", lty=2)\npoints(x1, y3, col="black",pch="")\nlines(x1, y3, col="black", type="l", lty=3)`,
+    value: `x1 = c(112.019,113.019,114.019,114.019,114.019,114.019,114.019,114.519)\nx2=c(112.019,112.019,112.019,112.019,112.219,113.519,114.519,114.519)\nx3=c(114.519,114.519,113.019,113.019,113.019,113.019,113.019,113.019)\ny1=c(13,13,13,13,13,13,13,13)\ny2=c(48.819,58.819,68.819,78.819,106.019,106.019,106.019,106.019)\ny3=c(48.819,78.819,78.819,78.819,78.819,78.819,78.819,58.819)\nplot(x1, y1, type="l", col="black", pch="o", xlab ="",  ylab="", lty=1, ylim = c(-50, 0))\npoints(x2, y2, col="black", pch="")\nlines(x2, y2, col="black", type="l", lty=2)\npoints(x1, y3, col="black",pch="")\nlines(x1, y3, col="black", type="l", lty=3)`,
     lineNumbers: true,
     mode: "r",
     theme: "light default",
