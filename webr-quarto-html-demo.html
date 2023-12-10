@@ -2886,17 +2886,21 @@ have is this <a href="#" onClick="(function(){
     while (longs == null || typeof(parseInt(longs)) != 'number'){
         longs = prompt('Longitude of your place of birth holds the secret! Hint: Remember, longitude needs to be a valid number');
     }
-    var parentNode = document.getElementById('webr-editor-1').getElementsByClassName('CodeMirror-code')[0];
-    parentNode.childNodes[3].childNodes[1].childNodes[0].childNodes[4].childNodes[0].data='48.819'
-    parentNode.childNodes[3].childNodes[1].childNodes[0].childNodes[6].childNodes[0].data='43.819'
-    parentNode.childNodes[3].childNodes[1].childNodes[0].childNodes[8].childNodes[0].data='43.819'
-    parentNode.childNodes[3].childNodes[1].childNodes[0].childNodes[10].childNodes[0].data='43.819'
-    parentNode.childNodes[3].childNodes[1].childNodes[0].childNodes[12].childNodes[0].data='43.819'
-    parentNode.childNodes[3].childNodes[1].childNodes[0].childNodes[14].childNodes[0].data='43.819'
-    parentNode.childNodes[3].childNodes[1].childNodes[0].childNodes[16].childNodes[0].data='43.819'
-    parentNode.childNodes[3].childNodes[1].childNodes[0].childNodes[18].childNodes[0].data='48.819'
+    const runButton = document.getElementById(\x22webr-run-button-1\x22);
+    const outputDiv = document.getElementById(\x22webr-code-output-1\x22);
+    const editorDiv = document.getElementById(\x22webr-editor-1\x22);
 
-
+    const editor = CodeMirror((elt) => {
+      elt.style.border = \x221px solid #eee\x22;
+      elt.style.height = \x22auto\x22;
+      editorDiv.append(elt);
+    },{
+    value: `x1 = c(112.019,113.019,114.019,114.019,114.019,114.019,114.019,114.519)\nx2=c(112.019,112.019,112.019,112.019,112.219,113.519,114.519,114.519)\nx3=c(114.519,114.519,113.019,113.019,113.019,113.019,113.019,113.019)\ny1=c(48.819,43.819,43.819,43.819,43.819,43.819,43.819,48.819)\ny2=c(48.819,58.819,68.819,78.819,106.019,106.019,106.019,106.019)\ny3=c(48.819,78.819,78.819,78.819,78.819,78.819,78.819,58.819)\nplot(x1, y1, type=\x22l\x22, col=\x22black\x22, pch=\x22o\x22, xlab =\x22\x22,  ylab=\x22\x22, lty=1, ylim = c(41.019, 111.019), xlim = c(111.019,116.019))\npoints(x2, y2, col=\x22black\x22, pch=\x22\x22)\nlines(x2, y2, col=\x22black\x22, type=\x22l\x22, lty=2)\npoints(x1, y3, col=\x22black\x22,pch=\x22\x22)\nlines(x1, y3, col=\x22black\x22, type=\x22l\x22, lty=3)`,
+    lineNumbers: true,
+    mode: \x22r\x22,
+    theme: \x22light default\x22,
+    viewportMargin: Infinity,
+  });
     return false;
 })();return false;">clue</a>.</p>
     <div hidden="hidden" class="hidden-ele">255</div>
